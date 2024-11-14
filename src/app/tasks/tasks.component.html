@@ -1,0 +1,7 @@
+<!-- <p>tasks works!</p> -->
+<p>{{id}}</p>
+<p>{{currentUserTasks}}</p>
+<p>{{tasks[0].userId}}</p>
+ @for(task of currentUserTasks; track task.id){
+<app-task [task]="task"></app-task>
+ }

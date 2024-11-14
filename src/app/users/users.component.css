@@ -1,0 +1,6 @@
+.container{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0 40%;
+}

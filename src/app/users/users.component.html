@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="left">
+    @for(user of users; track user.id){
+        <div (click)="onSelected(user)">{{user.name}}</div>
+    }
+    
+    </div>
+    <div class="right">
+    <app-tasks [id]="selectedUser?.id"></app-tasks>
+</div>
+</div>
